@@ -41,7 +41,7 @@ const delBtn = (id) =>{
         <table className="table table-hover w-100">
             <thead>
                 <tr>
-                    <th>S.no</th>
+                    <th className="text-center">S.no</th>
                     <th>Task Title</th>
                     <th>Task Desc</th>
                     <th>Task Due Date</th>
@@ -56,7 +56,7 @@ const delBtn = (id) =>{
 {tasks.map((val,ind) =>
 
 <tr key={ind}>
-<td>{(parseInt(ind)+1)}</td>
+<td className="text-center">{(parseInt(ind)+1)}</td>
 <td>{val.title}</td>
 <td>{val.desc}</td>
 <td>{val.dueDate}</td>
