@@ -54,6 +54,10 @@ body{
     vertical-align: unset;
 }
 
+h4,h2,thead{
+  cursor:default;
+}
+
 thead{
   background: #135ba7;
     color: white;
