@@ -26,8 +26,10 @@ const delBtn = (id) =>{
         }
 
         const statusChange = (id,e) => {
-            const isCheck = e.target.checked;
-            dispatch(statusChecked({id,isCheck}))
+            
+            const status = e.target.checked;
+            console.log(id,status);
+            dispatch(statusChecked({id,status}))
         }
 
 
@@ -36,7 +38,7 @@ const delBtn = (id) =>{
         <h4 className='text-center'>List Of Tasks</h4>
         <NewTask newTask={newTask}/>
         <div class="table-responsive">
-        <table className="table table-bordered table-hover w-100">
+        <table className="table table-hover w-100">
             <thead>
                 <tr>
                     <th>S.no</th>
@@ -59,10 +61,8 @@ const delBtn = (id) =>{
 <td>{val.desc}</td>
 <td>{val.dueDate}</td>
 <td>
-<div className="custom-control custom-checkbox">
-                            <input type="checkbox" className="custom-control-input" checked={val.status} onChange={(e) => statusChange(val.id,e)} id="customCheck1"/>
-                            <label className="custom-control-label" for="customCheck1"></label>
-                        </div>
+                            <input type="checkbox"  className="custom-control custom-checkbox" checked={val.status} onChange={(e) => statusChange(val.id,e)} id="customCheck1"/>
+                            
                      </td>
                      
 <td ><div className={val.priority}>{val.priority}</div></td>

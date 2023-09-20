@@ -39,6 +39,7 @@ statusChecked:(state,action) => {
     if(exactState){
         exactState.status = status;
     }
+    localStorage.setItem('tasks_list',JSON.stringify(state));
 }
 
 }

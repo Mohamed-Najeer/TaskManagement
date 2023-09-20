@@ -2,7 +2,7 @@ import React from 'react';
 import { Routes,Route } from 'react-router-dom';
 import Form from './Component/FormPage';
 import TaskList from './Component/List';
-
+import '../src/App.css';
 
 
 function App() {
