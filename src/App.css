@@ -71,6 +71,10 @@ td input[type="checkbox"]{
   margin:auto;
 }
 
+table td{
+  background: #a2c4e936;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

@@ -75,7 +75,7 @@ const delBtn = (id) =>{
 
 
 )}
- {(!tasks.length) && <tr><td colSpan="7" className='text-center'>No tasks are available ...</td></tr>
+ {(!tasks.length) && <tr><td colSpan="7" className='text-center bg-emp'>No tasks are available ...</td></tr>
  }
 
                  
