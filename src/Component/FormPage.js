@@ -1,5 +1,5 @@
 import { useLocation,useParams, useNavigate } from 'react-router-dom';
-import { addTask,editTask } from '../features/Tasks/taskSlice';
+import { addTask,editTask, taskState } from '../features/Tasks/taskSlice';
 import React,{useState,useEffect} from 'react';
 import {useDispatch,useSelector} from 'react-redux';
 import {nanoid} from '@reduxjs/toolkit';
@@ -15,7 +15,7 @@ const FormPage = () => {
    
     
 
-const AllData = useSelector((state) => state.tasks);
+const AllData = useSelector(taskState);
 const canSave = [title,desc,dueDate,priority].every(Boolean);
 
 const path = useLocation();

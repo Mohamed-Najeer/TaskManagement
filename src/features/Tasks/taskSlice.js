@@ -47,6 +47,7 @@ statusChecked:(state,action) => {
 
 });
 
+export const taskState = (state) => state.tasks;
 
 export const {addTask,editTask,deleteTask,statusChecked} = taskSlice.actions;
 export default taskSlice.reducer;
